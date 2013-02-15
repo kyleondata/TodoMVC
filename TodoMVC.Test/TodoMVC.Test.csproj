@@ -57,7 +57,7 @@
     <Compile Include="Todo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MvcApplication1\TodoMVC.csproj">
+    <ProjectReference Include="..\TodoMVC\TodoMVC.csproj">
       <Project>{337beaca-7d0c-4298-987b-87e4e6b16c76}</Project>
       <Name>TodoMVC</Name>
     </ProjectReference>

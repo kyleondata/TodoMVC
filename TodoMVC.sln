@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoMVC", "MvcApplication1\TodoMVC.csproj", "{337BEACA-7D0C-4298-987B-87E4E6B16C76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoMVC", "TodoMVC\TodoMVC.csproj", "{337BEACA-7D0C-4298-987B-87E4E6B16C76}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoMVC.Test", "TodoMVC.Test\TodoMVC.Test.csproj", "{9D607A6A-2E87-413A-85BC-CF777BB91326}"
 EndProject
