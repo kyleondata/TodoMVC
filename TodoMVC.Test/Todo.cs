@@ -8,7 +8,7 @@ namespace TodoMVC.Test
     public class TestTodo
     {
         [TestMethod]
-        public void ItShouldReturnTrueWhenAddingTodos()
+        public void TestAddingTodo()
         {
             //TODO: Not quite sure if this is how you use moq properly.
             //If I say it is going to return the value true and I assert
@@ -25,11 +25,13 @@ namespace TodoMVC.Test
             newTodo.Description = "testing";
 
             //Map behavior
-            todo.Setup(t => t.Add(It.IsAny<Todo.Models.Todo>())).Returns(true);
+            todo.Setup(t => t.Add(It.IsAny<Todo.Models.Todo>())).Returns((Todo.Models.Todo t) => t);
 
             //Assert
             var result = todo.Object.Add(newTodo);
-            Assert.AreEqual(true, result);
+            Assert.IsNotNull(result);
+            Assert.IsInstanceOfType(result, typeof(Todo.Models.Todo));
+            Assert.AreEqual(newTodo.id, result.id);
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Todo.Interfaces
 {
     public interface ITodo
     {
-        bool Add(Models.Todo todo);
+        Models.Todo Add(Models.Todo todo);
         bool Remove();
     }
 }

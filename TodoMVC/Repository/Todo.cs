@@ -13,7 +13,7 @@ namespace Todo.Repository
             _ITodo = ITodo;
         }
 
-        public bool Add(Models.Todo todo)
+        public Models.Todo Add(Models.Todo todo)
         {
             throw new NotImplementedException();
         }

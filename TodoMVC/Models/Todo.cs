@@ -8,6 +8,8 @@ namespace Todo.Models
 {
     public class Todo
     {
+        [Key]
+        public int id { get; set; }
         [Required]
         public string Title { get; set; }
         public string Description { get; set; }
